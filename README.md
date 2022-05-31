@@ -3,7 +3,7 @@
 ![Vite](https://img.shields.io/badge/2.9.1-Vite-orange)
 ![TypeScript](https://img.shields.io/badge/4.6.3-TypeScript-lightgrey)
 ![Vue](https://img.shields.io/badge/3.2.31-Vue-brightgreen)
-![vk-uview-ui](https://img.shields.io/badge/1.3.3-vk%uview%ui-blueviolet)
+![vk-uview-ui](https://img.shields.io/badge/1.3.3-vk--uview--ui-blueviolet)
   
 </div>
 <div align=center>
