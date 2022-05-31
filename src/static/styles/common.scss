@@ -1,0 +1,34 @@
+@for $i from 1 through 24 {
+  .f#{$i} {
+    font-size: ($i * 2rpx) !important;
+  }
+}
+@for $i from 1 through 20 {
+  .flex-#{$i} {
+    flex: $i;
+  }
+  .ml#{$i} {
+    margin-left: ($i * 2rpx);
+  }
+  .mr#{$i} {
+    margin-right: ($i * 2rpx);
+  }
+  .mt#{$i} {
+    margin-top: ($i * 2rpx);
+  }
+  .mb#{$i} {
+    margin-bottom: ($i * 2rpx);
+  }
+  .pl#{$i} {
+    padding-left: ($i * 2rpx);
+  }
+  .pr#{$i} {
+    padding-right: ($i * 2rpx);
+  }
+  .pt#{$i} {
+    padding-top: ($i * 2rpx);
+  }
+  .pb#{$i} {
+    padding-bottom: ($i * 2rpx);
+  }
+}

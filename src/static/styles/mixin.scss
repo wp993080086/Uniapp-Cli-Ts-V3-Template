@@ -1,0 +1,29 @@
+//多行超出省略号
+@mixin ell($num: 1) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}
+
+//水平垂直居中
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//扩展点击区域(多用于移动端)
+@mixin extend-click() {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
