@@ -1,6 +1,10 @@
 {
-  "name": "uni-template",
+  "name": "uniapp-cli-ts-template",
   "version": "1.0.0",
+  "author": {
+    "name": "wangpeng",
+    "email": "993080086@qq.com"
+  },
   "scripts": {
     "serve": "uni -p mp-weixin",
     "serve:test": "uni -p mp-weixin --mode test",

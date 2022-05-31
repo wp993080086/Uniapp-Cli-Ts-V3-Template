@@ -1,6 +1,10 @@
 {
-  "name": "uni-template",
+  "name": "uniapp-cli-ts-template",
   "appid": "",
+  "author": {
+    "name": "wangpeng",
+    "email": "993080086@qq.com"
+  },
   "description": "",
   "versionName": "1.0.0",
   "versionCode": "100",
@@ -60,7 +64,7 @@
   "quickapp": {},
   /* 小程序特有相关 */
   "mp-weixin": {
-    "appid": "wx676e009709c5610f",
+    "appid": "wx8a69e474ba11516b",
     "setting": {
       "urlCheck": false
     },

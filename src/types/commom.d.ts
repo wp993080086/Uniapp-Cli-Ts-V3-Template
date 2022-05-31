@@ -1,4 +1,5 @@
 // 任意函数
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare type TAnyFunc = (...args: any[]) => any
 
 // 字典

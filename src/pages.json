@@ -14,15 +14,15 @@
       }
     },
     {
-      "path": "pages/list/index",
+      "path": "pages/pinia/index",
       "style": {
-        "navigationBarTitleText": "列表"
+        "navigationBarTitleText": "Pinia"
       }
     },
     {
-      "path": "pages/my/index",
+      "path": "pages/charts/index",
       "style": {
-        "navigationBarTitleText": "个人中心"
+        "navigationBarTitleText": "图表"
       }
     },
     {
@@ -39,22 +39,28 @@
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "static/images/tabbar/home1.png",
+				"selectedIconPath": "static/images/tabbar/home2.png"
       },
       {
-        "pagePath": "pages/list/index",
-        "text": "列表"
+        "pagePath": "pages/pinia/index",
+        "text": "Pinia",
+        "iconPath": "static/images/tabbar/pinia1.png",
+				"selectedIconPath": "static/images/tabbar/pinia2.png"
       },
       {
-        "pagePath": "pages/my/index",
-        "text": "个人中心"
+        "pagePath": "pages/charts/index",
+        "text": "图表",
+        "iconPath": "static/images/tabbar/charts1.png",
+				"selectedIconPath": "static/images/tabbar/charts2.png"
       }
     ]
   }

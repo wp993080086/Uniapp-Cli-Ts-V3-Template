@@ -1,61 +1,41 @@
 <script setup lang="ts">
 import { computed, CSSProperties, reactive } from 'vue'
-import { images } from '@/utils/mock'
-
-const theme = {
-  color: 'red',
-  bgImg: images[0]
-}
 
 const data = reactive({
-  show: false,
-  mode: 'date'
+  bgIndex: 0,
+  imageBg: [
+    '../../static/images/banner1.png',
+    '../../static/images/banner2.png',
+    '../../static/images/banner3.png'
+  ]
 })
 
-const homeStyle = computed<CSSProperties>(() => ({
-  backgroundImage: `url(${theme.bgImg})`
+const homeBg = computed<CSSProperties>(() => ({
+  backgroundImage: `url(${data.imageBg[data.bgIndex]})`
 }))
-const goAddress = () => {
+
+const toLogin = () => {
   uni.navigateTo({
     url: '/pages/login/index'
   })
 }
+const handleChangeBg = () => {
+  data.bgIndex++
+  if (data.bgIndex > 2) data.bgIndex = 0
+}
 </script>
 <template>
-  <view class="home" :style="homeStyle">
-    <uni-nav-bar statusBar :border="false" backgroundColor="rgba(255, 255, 255, 0)" title="首页" />
-    <button @click="goAddress">打开地址</button>
-    <u-calendar v-model="data.show" :mode="data.mode" />
-    <u-button @click="data.show = true">打开</u-button>
+  <view class="home" :style="homeBg">
+    <button @click="toLogin">前往登录</button>
+    <button @click="handleChangeBg">更换背景</button>
   </view>
 </template>
 
 <style scoped lang="scss">
 .home {
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  ::v-deep {
-    .uni-navbar {
-      width: 100vw;
-    }
-  }
-}
-
-.realname {
   @include center();
-  color: v-bind('theme.color');
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .title {
-    font-size: 36rpx;
-    color: $uni-text-color-grey;
-  }
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

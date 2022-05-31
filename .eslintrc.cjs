@@ -26,7 +26,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/html-self-closing': [
       'warn',
