@@ -1,22 +1,23 @@
 <div align=center>
   
-![Vite](https://img.shields.io/badge/2.9.1-Vite-orange)
-![TypeScript](https://img.shields.io/badge/4.6.3-TypeScript-lightgrey)
-![Vue](https://img.shields.io/badge/3.2.31-Vue-brightgreen)
-![vk-uview-ui](https://img.shields.io/badge/1.3.3-vk--uview--ui-blueviolet)
-  
+![vite](https://img.shields.io/badge/2.9.1-vite-orange)
+![sass](https://img.shields.io/badge/1.49.9-sass-orange)
+![vue](https://img.shields.io/badge/3.2.31-vue-brightgreen)
+
 </div>
+
 <div align=center>
-  
-![Pinia](https://img.shields.io/badge/2.0.12-Pinia-yellow)
+
+![pinia](https://img.shields.io/badge/2.0.12-pinia-yellow)
 ![uni-ui](https://img.shields.io/badge/1.4.12-uni--ui-409EFF)
-![Sass](https://img.shields.io/badge/1.49.9-Sass-orange)
-  
+![typeScript](https://img.shields.io/badge/4.6.3-typeScript-lightgrey)
+![vk-uview-ui](https://img.shields.io/badge/1.3.3-vk--uview--ui-blueviolet)
+
 </div>
 
 # ⚡️ 简介
 
-一个开箱即用的 `Vite 2` + `Vue 3` + `Uview-ui` + `Pinia` + `uni-ui` 的`uniapp`项目模板，搭配有 `eslint` 代码检查修复，`git` 推送检查钩子 `Husky`。
+一个开箱即用，基于 `vite 2` + `vue 3` + `uview-ui` + `pinia` + `uni-ui` 的`uniapp`项目模板。
 
 # 🚀 开发
 
@@ -34,6 +35,7 @@ npm run serve
 
 `运行成功后，使用微信开发者工具，选择mp-weixin目录并打开（路径：dist/dev/mp-weixin），即可预览。`
 
+
 # 📦️ 多环境打包
 
 - 测试环境打包
@@ -49,6 +51,7 @@ npm run build
 ```
 
 `打包完成后，使用微信开发者工具，选择mp-weixin目录并打开，目录路径：dist/build/mp-weixin，在微信开发者工具中点击上传即可。`
+
 
 # 🔧 代码检查修复
 
