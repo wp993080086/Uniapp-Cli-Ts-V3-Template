@@ -41,7 +41,7 @@ npm run serve
 - 测试环境打包
 
 ```
-npm run build:test
+npm run build_test
 ```
 
 - 生产环境打包
