@@ -17,7 +17,8 @@ const userInfo = computed(() => {
 
 <style scoped lang="scss">
 .pinia_box {
-  @include center();
+  @include flex_center();
+  @include set_w_h(fill, fill);
   color: v-bind('textColor');
 }
 </style>

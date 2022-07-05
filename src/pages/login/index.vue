@@ -17,7 +17,7 @@ const loginInfo = reactive({
 </template>
 <style scoped lang="scss">
 .login_box {
-  @include center();
+  @include flex_center;
   width: 100%;
   height: 100vh;
   .ipt_box {

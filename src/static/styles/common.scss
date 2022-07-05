@@ -1,34 +1,60 @@
-@for $i from 1 through 24 {
-  .f#{$i} {
-    font-size: ($i * 2rpx) !important;
+$black:#000000;
+$white:#ffffff;
+$red: #f56c6c;
+$blue:#409eff;
+$gray:#cccccc;
+
+// 设置宽高
+@mixin set_w_h($w: fill, $h: fill) {
+  @if ($w == fill) {
+    width: 100%;
+  } @else if ($w == auto) {
+    width: auto;
+  } @else {
+    width: #{$w}rpx;
+  }
+  @if ($h == fill) {
+    height: 100%;
+  } @else if ($h == auto) {
+    height: auto;
+  } @else {
+    height: #{$h}rpx;
   }
 }
-@for $i from 1 through 20 {
-  .flex-#{$i} {
-    flex: $i;
-  }
-  .ml#{$i} {
-    margin-left: ($i * 2rpx);
-  }
-  .mr#{$i} {
-    margin-right: ($i * 2rpx);
-  }
-  .mt#{$i} {
-    margin-top: ($i * 2rpx);
-  }
-  .mb#{$i} {
-    margin-bottom: ($i * 2rpx);
-  }
-  .pl#{$i} {
-    padding-left: ($i * 2rpx);
-  }
-  .pr#{$i} {
-    padding-right: ($i * 2rpx);
-  }
-  .pt#{$i} {
-    padding-top: ($i * 2rpx);
-  }
-  .pb#{$i} {
-    padding-bottom: ($i * 2rpx);
+
+// 水平垂直居中
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 单行文本省略号
+@mixin omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行文本省略号
+@mixin omit_more {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+//扩展点击区域(多用于移动端)
+@mixin extend-click() {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
   }
 }

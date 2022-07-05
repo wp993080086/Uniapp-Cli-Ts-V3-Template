@@ -33,7 +33,7 @@ const handleChangeBg = () => {
 
 <style scoped lang="scss">
 .home {
-  @include center();
+  @include flex_center();
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;

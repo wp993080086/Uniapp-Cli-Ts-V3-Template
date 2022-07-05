@@ -16,12 +16,12 @@ module.exports = {
     getApp: true,
     __wxConfig: true,
     uni: true,
-    TDict: true,
+    TDictObject: true,
+    TDictArray: true,
     TAnyObject: true,
     TAnyArray: true,
     TAny: true,
-    TAnyFunc: true,
-    TRemovableRef: true
+    TAnyFunc: true
   },
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',

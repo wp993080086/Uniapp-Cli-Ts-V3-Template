@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "author": {
     "name": "鹏多多",
-    "email": "993080086@qq.com"
+    "email": "993080086@qq.com",
+    "url": "https://github.com/wp993080086"
   },
   "scripts": {
     "serve": "uni -p mp-weixin",
-    "serve:test": "uni -p mp-weixin --mode test",
+    "serve_test": "uni -p mp-weixin --mode test",
     "build": "uni build -p mp-weixin --mode production",
-    "build:test": "uni build -p mp-weixin --mode test",
+    "build_test": "uni build -p mp-weixin --mode test",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
     "prepare": "husky install",

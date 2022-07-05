@@ -1,5 +1,5 @@
 import { Toast } from '../utils/toast.js'
-import { THeaderOption, TPatamOption } from './requestType'
+import { THeaderOption, TPatamOption } from './request-type'
 
 const baseURL = ''
 const headerOption: THeaderOption = {
