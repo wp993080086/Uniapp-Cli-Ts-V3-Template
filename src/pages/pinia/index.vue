@@ -1,3 +1,11 @@
+<template>
+  <view class="pinia_box">
+    <p>{{ userInfo }}</p>
+    <u-calendar v-model="show" mode="date"></u-calendar>
+		<u-button @click="show = true">打开日历</u-button>
+  </view>
+</template>
+
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { userInfoStore } from '../../store/index'
@@ -7,13 +15,8 @@ const userStore = userInfoStore()
 const userInfo = computed(() => {
   return userStore.getUserInfo().userName
 })
+const show = ref(false)
 </script>
-
-<template>
-  <view class="pinia_box">
-    <p>{{ userInfo }}</p>
-  </view>
-</template>
 
 <style scoped lang="scss">
 .pinia_box {

@@ -1,3 +1,11 @@
+<template>
+  <view class="content">
+    <view class="charts-box">
+      <qiun-data-charts type="column" :chartData="chartData" />
+    </view>
+  </view>
+</template>
+
 <script setup lang="ts">
 import { ref } from 'vue'
 
@@ -15,14 +23,6 @@ const chartData = ref({
   ]
 })
 </script>
-
-<template>
-  <view class="content">
-    <view class="charts-box">
-      <qiun-data-charts type="column" :chartData="chartData" />
-    </view>
-  </view>
-</template>
 
 <style scoped lang="scss">
 .content {

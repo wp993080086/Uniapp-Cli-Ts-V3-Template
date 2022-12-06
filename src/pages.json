@@ -1,67 +1,67 @@
 {
-  "easycom": {
-    "autoscan": true,
-    "custom": {
-      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
-      "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
-    }
-  },
-  "pages": [
-    {
-      "path": "pages/home/index",
-      "style": {
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/pinia/index",
-      "style": {
-        "navigationBarTitleText": "Pinia"
-      }
-    },
-    {
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/pinia/index",
+			"style": {
+				"navigationBarTitleText": "Pinia"
+			}
+		},
+		{
       "path": "pages/charts/index",
       "style": {
         "navigationBarTitleText": "图表"
       }
     },
-    {
-      "path": "pages/login/index",
-      "style": {
-        "navigationBarTitleText": "登录"
-      }
-    }
-  ],
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-template",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "color": "#bfbfbf",
-    "selectedColor": "#1296db",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/home/index",
-        "text": "首页",
-        "iconPath": "static/images/tabbar/home1.png",
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-template",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/home1.png",
 				"selectedIconPath": "static/images/tabbar/home2.png"
-      },
-      {
-        "pagePath": "pages/pinia/index",
-        "text": "Pinia",
-        "iconPath": "static/images/tabbar/pinia1.png",
+			},
+			{
+				"pagePath": "pages/pinia/index",
+				"text": "Pinia",
+				"iconPath": "static/images/tabbar/pinia1.png",
 				"selectedIconPath": "static/images/tabbar/pinia2.png"
-      },
-      {
+			},
+			{
         "pagePath": "pages/charts/index",
         "text": "图表",
         "iconPath": "static/images/tabbar/charts1.png",
 				"selectedIconPath": "static/images/tabbar/charts2.png"
       }
-    ]
-  }
+		]
+	}
 }

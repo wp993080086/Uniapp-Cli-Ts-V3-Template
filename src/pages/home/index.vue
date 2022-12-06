@@ -1,3 +1,11 @@
+<template>
+  <view class="home" :style="homeBg">
+    <button @click="toLogin">前往登录</button>
+    <button @click="handleChangeBg">更换背景</button>
+    <u-button type="primary">主要按钮</u-button>
+  </view>
+</template>
+
 <script setup lang="ts">
 import { computed, CSSProperties, reactive } from 'vue'
 
@@ -24,12 +32,6 @@ const handleChangeBg = () => {
   if (data.bgIndex > 2) data.bgIndex = 0
 }
 </script>
-<template>
-  <view class="home" :style="homeBg">
-    <button @click="toLogin">前往登录</button>
-    <button @click="handleChangeBg">更换背景</button>
-  </view>
-</template>
 
 <style scoped lang="scss">
 .home {

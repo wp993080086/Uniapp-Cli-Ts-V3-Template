@@ -28,7 +28,7 @@ export const getSystemInfo = () => {
  * @param  {String} keys key
  * @param  {any} datas 缓存的数据
  */
-export const setStorage = (keys: string, datas: TAnyObject) => {
+export const setStorage = (keys: string, datas: TDict) => {
   return new Promise((resolve, reject) => {
     uni.setStorage({
       key: keys,
@@ -88,7 +88,7 @@ export const checkType = (value: TAny) => {
  * 深拷贝（递归）
  * @param {*} sourceValue 需要拷贝的值
  */
-export const deepClone = (sourceValue: TAnyObject | TAnyArray | TAny) => {
+export const deepClone = (sourceValue: TDict | Array<TAny> | TAny) => {
   // 如果传入的数据是简单类型（不是 {} & []），直接返回即可
   if (typeof sourceValue !== 'object') {
     return sourceValue
@@ -133,7 +133,7 @@ export const deepClone = (sourceValue: TAnyObject | TAnyArray | TAny) => {
   return result
 }
 // 手机号码校验
-export const validateMobile = (value: string, callback: TAnyFunc) => {
+export const validateMobile = (value: string, callback: TFunc) => {
   const RegExp = /^1(3[0-9]|4[01456879]|5[0-35-9]|6[2567]|7[0-8]|8[0-9]|9[0-35-9])\d{8}$/
   if (value === '') {
     callback(new Error('请填写联系电话'))
@@ -148,12 +148,12 @@ export const validateMobile = (value: string, callback: TAnyFunc) => {
  * @param {Function} fn 事件
  * @param {Number} limit 触发间隔
  */
-export const throttle = (fn: TAnyFunc, limit = 200) => {
+export const throttle = (fn: TFunc, limit = 200) => {
   let wait = false
   // eslint-disable-next-line
   const _this = this
   // eslint-disable-next-line
-  return function (_this: TAny, ...args: TAnyArray) {
+  return function (_this: TAny, ...args: Array<TAny>) {
     if (wait === false) {
       wait = true
       setTimeout(() => {
@@ -170,12 +170,12 @@ export const throttle = (fn: TAnyFunc, limit = 200) => {
  * @param {Number} wait 触发间隔
  * @param {Number} immediate 是否立即触发一次
  */
-export const debounce = (wait: number, fn: TAnyFunc, immediate = false) => {
+export const debounce = (wait: number, fn: TFunc, immediate = false) => {
   let timeout: TAny
   // eslint-disable-next-line
   const _this = this
   // eslint-disable-next-line
-  const debounced = function (_this: TAny, ...args: TAnyArray) {
+  const debounced = function (_this: TAny, ...args: Array<TAny>) {
     const later = () => {
       timeout
       if (immediate !== true) {

@@ -1,18 +1,18 @@
-<script setup lang="ts">
-import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
-
-onLaunch(() => {
-  console.log('App Launch')
-})
-onShow(() => {
-  console.log('App Show')
-})
-onHide(() => {
-  console.log('App Hide')
-})
+<script>
+export default {
+  onLaunch: function () {
+    console.log('App Launch')
+  },
+  onShow: function () {
+    console.log('App Show')
+  },
+  onHide: function () {
+    console.log('App Hide')
+  }
+}
 </script>
 
 <style lang="scss">
-@import 'vk-uview-ui/index.scss';
 @import './static/styles/reset.css';
+@import 'vk-uview-ui/index.scss';
 </style>

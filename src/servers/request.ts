@@ -12,7 +12,7 @@ const headerOption: THeaderOption = {
  * @param {Object} param 参数
  * @return {String} 处理后的接口地址
  */
-const getParamDispose = (url: string, param: TAnyObject) => {
+const getParamDispose = (url: string, param: TDict) => {
   const keyArr = Object.keys(param)
   const valueArr = Object.values(param)
   const leng = keyArr.length
@@ -39,7 +39,7 @@ const Request = {
   post: (
     module: string,
     api: string,
-    param: TAnyObject = {},
+    param: TDict = {},
     option: TPatamOption = { isToken: true }
   ) => {
     const url = `${baseURL}${module}${api}`
@@ -78,7 +78,7 @@ const Request = {
   get: (
     module: string,
     api: string,
-    param: TAnyObject = {},
+    param: TDict = {},
     option: TPatamOption = { isToken: true }
   ) => {
     const url = getParamDispose(`${baseURL}${module}${api}`, param)

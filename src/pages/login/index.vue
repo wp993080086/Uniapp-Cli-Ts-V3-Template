@@ -1,3 +1,12 @@
+<template>
+  <view class="login_box">
+    <view class="ipt_box">
+      <u-input v-model="loginInfo.username" type="text" :border="true" />
+      <uni-easyinput type="password" v-model="loginInfo.password" placeholder="请输入密码" />
+    </view>
+  </view>
+</template>
+
 <script setup lang="ts">
 import { reactive } from 'vue'
 
@@ -7,14 +16,6 @@ const loginInfo = reactive({
 })
 </script>
 
-<template>
-  <view class="login_box">
-    <view class="ipt_box">
-      <u-input v-model="loginInfo.username" type="text" :border="true" />
-      <uni-easyinput type="password" v-model="loginInfo.password" placeholder="请输入密码" />
-    </view>
-  </view>
-</template>
 <style scoped lang="scss">
 .login_box {
   @include flex_center;
